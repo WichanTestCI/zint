@@ -17,4 +17,4 @@ jobs:
           repo: ${{ github.event.repository.owner.login }}/${{ github.event.repository.name }}
           conclusion: ${{ job.status }}
           output: |
-            {"summary": ${{ job.status }}}
+            {"summary": "No finding found!!!"}
