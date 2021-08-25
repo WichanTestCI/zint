@@ -13,6 +13,6 @@ jobs:
   create_check:
     runs-on: ubuntu-latest
     steps:
-      - uses: WichanTestCI/simple-findings-check-action@main
+      - uses: WichanTestCI/simple-findings-check-action
         with:
           who-to-greet: CI team members
