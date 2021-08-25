@@ -10,6 +10,7 @@ jobs:
     steps:
       - uses: WichanTestCI/simple-findings-check-action@main
         with:
+          name: 'Our first check!'
           who-to-greet: 'CI team members'
           ci-fuzz-api-token: ${{ secrets.CI_FUZZ_API_TOKEN }}
           github-token: ${{ secrets.GITHUB_TOKEN }}
