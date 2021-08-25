@@ -14,4 +14,4 @@ jobs:
           who-to-greet: 'CI team members'
           ci-fuzz-api-token: ${{ secrets.CI_FUZZ_API_TOKEN }}
           github-token: ${{ secrets.GITHUB_TOKEN }}
-          repo: ${{ github.event.repository.name }}
+          repo: ${{ github.event.repository.owner.login }}/${{ github.event.repository.name }}
