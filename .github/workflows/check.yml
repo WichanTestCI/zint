@@ -13,7 +13,7 @@ jobs:
   create_check:
     runs-on: ubuntu-latest
     steps:
-      - uses: WichanTestCI/finding-checks-action@v1
+      - uses: WichanTestCI/simple-findings-check-action@main
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          name: CI Findings
+          who-to-greet: CI team members
