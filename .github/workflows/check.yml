@@ -8,7 +8,7 @@ jobs:
   create_check:
     runs-on: ubuntu-latest
     steps:
-      - uses: WichanTestCI/simple-findings-check-action@v1
+      - uses: WichanTestCI/simple-findings-check-action@main
         with:
           who-to-greet: 'CI team members'
           ci-fuzz-api-token: ${{ secrets.CI_FUZZ_API_TOKEN }}
