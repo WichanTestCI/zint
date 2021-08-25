@@ -15,4 +15,4 @@ jobs:
     steps:
       - uses: WichanTestCI/simple-findings-check-action@v1
         with:
-          who-to-greet: CI team members
+          who-to-greet: 'CI team members'
