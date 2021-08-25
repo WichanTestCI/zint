@@ -1,7 +1,7 @@
 name: Code Intelligence Check
 
 on:
-  pull_request:
+  push:
     branches: [ master ]
 
 env:
@@ -15,5 +15,4 @@ jobs:
     steps:
       - uses: WichanTestCI/simple-findings-check-action@main
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
           who-to-greet: CI team members
