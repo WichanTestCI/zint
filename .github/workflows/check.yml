@@ -1,1 +1,19 @@
+name: Code Intelligence Check
 
+on:
+  pull_request:
+    branches: [ master ]
+
+env:
+  FUZZING_SERVER_ADDRESS: demo.code-intelligence.com:6773
+  WEB_APP_ADDRESS:  https://demo.code-intelligence.com
+
+
+jobs:
+  create_check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: WichanTestCI/finding-checks-action@v1
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          name: CI Findings
