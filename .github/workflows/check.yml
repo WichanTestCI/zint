@@ -4,15 +4,10 @@ on:
   push:
     branches: [ master ]
 
-env:
-  FUZZING_SERVER_ADDRESS: demo.code-intelligence.com:6773
-  WEB_APP_ADDRESS:  https://demo.code-intelligence.com
-
-
 jobs:
   create_check:
     runs-on: ubuntu-latest
     steps:
-      - uses: WichanTestCI/simple-findings-check-action@1.0.0
+      - uses: octocat/hello-world-javascript-action@v1.1
         with:
           who-to-greet: 'CI team members'
