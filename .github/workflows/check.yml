@@ -8,6 +8,6 @@ jobs:
   create_check:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/hello-world-javascript-action@v1.1
+      - uses: WichanTestCI/simple-findings-check-action@v1
         with:
           who-to-greet: 'CI team members'
